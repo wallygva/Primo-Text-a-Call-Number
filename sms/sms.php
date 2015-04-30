@@ -25,7 +25,9 @@ $location 		= "\nLoc: ".trim(substr($location,0,$callNumber_pos));
 //defined variables. Set the from address and subject as desired
 $subject 		= SMS_MESSAGE_SUBJECT;
 
-$providers = array(	'cingular' 	=> '@txt.att.net',
+// use of mms for at&t minimizes crap display on iPhone
+
+$providers = array(	'cingular' 	=> '@mms.att.net',
              		'tmobile' 	=> '@tmomail.net',
              		'virgin' 	=> '@vmobl.com',
              		'sprint' 	=> '@messaging.sprintpcs.com',

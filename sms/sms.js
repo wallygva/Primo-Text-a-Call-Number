@@ -1,7 +1,8 @@
 // JavaScript Document
 
 // set this to be the URL for the SMS script
-var smsurl = "http://library.pdx.edu/primo/sms/sms.php?";
+// move this to the config.php one of these days
+var smsurl = "http://lso.gmu.edu/primo/sms.php?";
 
 function showsms(sms_result_id) {
    
@@ -29,7 +30,7 @@ function showsms(sms_result_id) {
 			});
 		}
 		
-		var sms = document.getElementById('sms');				// this is the DIV that we're going to put the text into
+		var sms = document.getElementById('sms');	// this is the DIV that we're going to put the text into
 		// we'll load the 'out' variable with all the html and then put it into the sms div
 		var out = "<div id='smstop'>Send the title, location, and call number of this item to your cell phone</div><div id='smsmain'><div id='smsinput'><form name='sms_form' method=post><p><b>Title</b>: "+ title +"</p>";
 
